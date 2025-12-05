@@ -1,0 +1,8 @@
+# scripts フォルダを除外
+
+scripts/
+
+# その他
+
+README.md
+.env
