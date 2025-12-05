@@ -11,9 +11,9 @@ NotionAPI で取得する項目（データベース構成）は以下になり�
 | :------------------ | :---------------- | :--: | :------------------------------------------------- |
 | **Title**           | Title (タイトル)  |  ✅  | 記事のタイトル                                     |
 | **Slug**            | Text (テキスト)   |  ✅  | URL 用スラッグ (例: `title1`)                      |
-| **Category**        | Select (セレクト) |  -   | 記事カテゴリ (例: `カテゴリ1`)                     |
+| **Category**        | Select (セレクト) |  ✅  | 記事カテゴリ (例: `カテゴリ1`)                     |
 | **Status**          | Select (セレクト) |  ✅  | 公開ステータス (`draft` / `published` / `private`) |
-| **PublishedAt**     | Date (日付)       |  -   | 記事の公開日                                       |
+| **PublishedAt**     | Date (日付)       |  ✅  | 記事の公開日                                       |
 | **UpdatedAt**       | Date (日付)       |  -   | 記事の更新日                                       |
 | **Description**     | Text (テキスト)   |  -   | 記事の概要・メタディスクリプション                 |
 
@@ -50,9 +50,7 @@ npm install
 npm run get-datasource-id
 ```
 
-### 2.挙動を確認
-
-NotionAPI を実行
+### 2.NotionAPI を実行
 
 ```
 npm run dev
