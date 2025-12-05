@@ -3,7 +3,7 @@
 前提で、Notion 側と cloudflare 側で適切な設定が必要になります。
 以下の記事を参考にしてください ↓
 
-XXXX.com
+https://qiita.com/sattoon/private/5fc403b67c828fba7f45
 
 NotionAPI で取得する項目（データベース構成）は以下になります ↓
 
@@ -59,9 +59,19 @@ curl -X GET -H "x-revalidate-secret: test" "http://localhost:8787/api"
 
 ## ローカルから cloudflare 直接デプロイする場合
 
+### 1.デプロイ
+
 ```txt
 npx wrangler login
 npm run deploy
+```
+
+### 2.本番にも環境変数設定
+
+```
+npx wrangler secret put NOTION_API_KEY
+npx wrangler secret put NOTION_DATA_SOURCE_ID
+npx wrangler secret put SERVICE_SECRET
 ```
 
 ## その他
